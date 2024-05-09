@@ -1,0 +1,66 @@
+body{
+	background-color: black;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	animation-name: shadow-out;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-delay: 1.5s;
+}
+
+h1{
+	font-family: "sloop-script-three", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: white;
+	font-size:18vw;
+	margin: -4vw;
+}
+
+h2{
+	font-family: arial;
+	font-weight: 400;
+	color: white;
+	font-size: 2vw;
+}
+
+h2.right{
+	position:relative;
+	 left: 24vw;
+}
+
+h2.left{
+	position:relative;
+	 left: -31vw;
+}
+
+@keyframes shadow-out{
+	from{background-color: black}
+	to{background-color: white;}
+}
+
+@keyframes shadow-in{
+	from {opacity: 0}
+	to{opacity: 1}
+}
+
+button{
+	position: absolute;
+	justify-content: center;
+	background-color: black;
+	color: white;
+	opacity: 0;
+	font-family: arial;
+	width: 30%;
+	height: 15%;
+	font-size: 3vw;
+	animation-name: shadow-in;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 4.5s;
+}
